@@ -1,0 +1,37 @@
+name: Build & Smoke-Test Native Ghost .NET SDK Launcher
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Zig 0.14.1
+        uses: mlugg/setup-zig@v2
+        with:
+          version: 0.14.1
+
+      - name: Cross-compile 5 targets (Win64, Linux x64/arm64, macOS arm64, WASI)
+        run: |
+          mkdir -p dist
+          zig cc -target x86_64-windows-gnu -std=c11 -O2 -s -Wall -Wextra src/dotnet_launcher.c -o dist/dotnet.exe
+          zig cc -target x86_64-linux-musl -static -std=c11 -O2 -s -Wall -Wextra src/dotnet_launcher.c -o dist/dotnet-linux-x64
+          zig cc -target aarch64-linux-musl -static -std=c11 -O2 -s -Wall -Wextra src/dotnet_launcher.c -o dist/dotnet-linux-arm64
+          zig cc -target aarch64-macos -std=c11 -O2 -Wall -Wextra src/dotnet_launcher.c -o dist/dotnet-macos-arm64
+          zig cc -target wasm32-wasi -std=c11 -Os -s -Wall -Wextra src/dotnet_launcher.c -o dist/dotnet.wasm
+          ls -lh dist/
+
+      - name: Smoke-test Linux x64 binary
+        run: |
+          chmod +x ./dist/dotnet-linux-x64
+          ./dist/dotnet-linux-x64 --ghost-version
+          ./dist/dotnet-linux-x64 --ghost-info
