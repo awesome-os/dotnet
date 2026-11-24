@@ -1,9 +1,12 @@
 {
   "name": "@awesome-os/dotnet",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Zero-installer native 4-OS C11 .NET SDK launcher hydrating rolling-latest .NET from awesome-os/b8g-ghost cas-v1 (Keep-Last-5, zero 1 GB installer bloat)",
   "type": "module",
   "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/awesome-os/dotnet.git"
