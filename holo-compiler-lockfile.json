@@ -1,0 +1,76 @@
+{
+  "schema": "holo-compiler-lockfile-v1",
+  "abiMagic": "0x33564742",
+  "casLayout": "v11",
+  "repo": "awesome-os/dotnet",
+  "targets": [
+    "linux-arm64",
+    "linux-x64",
+    "macos-arm64",
+    "wasm32-wasi",
+    "win64"
+  ],
+  "generatedAt": "2026-11-24T23:53:02.473Z",
+  "dependencies": [
+    {
+      "id": "awesome-os/dotnet/dotnet-linux-arm64",
+      "kind": "ghost-launcher",
+      "version": "v0.1.0",
+      "target": "linux-arm64",
+      "sha512": "4581f00789c4a1eaeaecfd99a8ddfa333157f7ba4fe30e7cbbb8a562ee187ced18031530ebd7278f15d2e202b54c2d10825f7d9a9677d9749763c69b87e23218",
+      "size": 47472,
+      "executable": true,
+      "blob": "v11/files/45/4581f00789c4a1eaeaecfd99a8ddfa333157f7ba4fe30e7cbbb8a562ee187ced18031530ebd7278f15d2e202b54c2d10825f7d9a9677d9749763c69b87e23218-exec",
+      "url": "https://github.com/awesome-os/dotnet/releases/download/v0.1.0/dotnet-linux-arm64",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/dotnet/dotnet-linux-x64",
+      "kind": "ghost-launcher",
+      "version": "v0.1.0",
+      "target": "linux-x64",
+      "sha512": "e922108f7bca55f2b877c32f4a57f04cb1b1841dffeedd274bd90615637de44bab0e3df5de0f10495a26ac7284fcff2ad9080347019c0f9ec0d74453e186f387",
+      "size": 39648,
+      "executable": true,
+      "blob": "v11/files/e9/e922108f7bca55f2b877c32f4a57f04cb1b1841dffeedd274bd90615637de44bab0e3df5de0f10495a26ac7284fcff2ad9080347019c0f9ec0d74453e186f387-exec",
+      "url": "https://github.com/awesome-os/dotnet/releases/download/v0.1.0/dotnet-linux-x64",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/dotnet/dotnet-macos-arm64",
+      "kind": "ghost-launcher",
+      "version": "v0.1.0",
+      "target": "macos-arm64",
+      "sha512": "0ad6e546167c936152decfb4a571f725d79745898403aa6f5b61af3123da0668266857e90b4139c6c44fe7bd389896e8cfc3d92b383fca0e2f9befad0f653d8b",
+      "size": 52368,
+      "executable": true,
+      "blob": "v11/files/0a/0ad6e546167c936152decfb4a571f725d79745898403aa6f5b61af3123da0668266857e90b4139c6c44fe7bd389896e8cfc3d92b383fca0e2f9befad0f653d8b-exec",
+      "url": "https://github.com/awesome-os/dotnet/releases/download/v0.1.0/dotnet-macos-arm64",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/dotnet/dotnet.exe",
+      "kind": "ghost-launcher",
+      "version": "v0.1.0",
+      "target": "win64",
+      "sha512": "f51adc4162add24b9c121f1386c7bb4839078584a81342b4ae5916b727878426867405f6efa8e376c8e2458b3e64a3307a74fda2528b75540ae3939ac059ce41",
+      "size": 26112,
+      "executable": true,
+      "blob": "v11/files/f5/f51adc4162add24b9c121f1386c7bb4839078584a81342b4ae5916b727878426867405f6efa8e376c8e2458b3e64a3307a74fda2528b75540ae3939ac059ce41-exec",
+      "url": "https://github.com/awesome-os/dotnet/releases/download/v0.1.0/dotnet.exe",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/dotnet/dotnet.wasm",
+      "kind": "ghost-launcher",
+      "version": "v0.1.0",
+      "target": "wasm32-wasi",
+      "sha512": "4fdb516b4581ae9a9bea0cfc5ec074e29e8d306ed619e5df38b180c37cbf743a9b57d4e171eb95aa97ae174b6148f254e1d9360b95ca341d30f93da75c1cc36c",
+      "size": 36588,
+      "executable": true,
+      "blob": "v11/files/4f/4fdb516b4581ae9a9bea0cfc5ec074e29e8d306ed619e5df38b180c37cbf743a9b57d4e171eb95aa97ae174b6148f254e1d9360b95ca341d30f93da75c1cc36c-exec",
+      "url": "https://github.com/awesome-os/dotnet/releases/download/v0.1.0/dotnet.wasm",
+      "dependencies": []
+    }
+  ]
+}
