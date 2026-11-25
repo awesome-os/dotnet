@@ -90,3 +90,13 @@ zig cc -target wasm32-wasi -std=c11 -Os -s -Wall -Wextra src/dotnet_launcher.c -
 ## License
 
 MIT
+
+## Quick Install & Run (Windows / Linux / macOS)
+
+```sh
+# Install / hydrate from v11 CAS via holo-pm
+holo-pm install repository://github.com/awesome-os/dotnet@main
+
+# Or project & run directly via holo-project (0-byte hardlink)
+holo-project "project://node/dotnet?from=repository://github.com/awesome-os/dotnet@main"
+```
