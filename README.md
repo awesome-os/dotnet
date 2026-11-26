@@ -1,3 +1,6 @@
+> [!NOTE]
+> Consolidated into the unified Holo v11 monorepo at https://github.com/awesome-os/awesome-os (all existing v11 CAS release assets remain downloadable).
+
 # `@awesome-os/dotnet` - Zero-Installer Native C11 .NET SDK Launcher
 
 Zero-dependency native C11 `.NET SDK` launcher (~25 KB, zero shell shims, zero 1 GB installer bloat) that hydrates rolling-latest .NET SDKs **once** from [`awesome-os/b8g-ghost`](https://github.com/awesome-os/b8g-ghost) (`cas-v1`, Keep-Last-5) into `~/.b8g/cas/dotnet/<sha256>/`.
